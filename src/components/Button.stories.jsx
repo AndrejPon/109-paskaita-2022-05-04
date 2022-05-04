@@ -1,12 +1,7 @@
 import React from 'react';
 import Button from './Button';
 
-export default {
-  title: 'Button',
-  component: Button,
-};
-
-export const Primary = (props) => (
+export const Primary = () => (
   <Button color='primary' type='submit'>
     Submit
   </Button>
@@ -21,3 +16,8 @@ export const Danger = () => (
     Reset
   </Button>
 );
+
+export default {
+  title: 'Button',
+  component: Button,
+};

@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import * as S from './Button.style';
+import * as S from './Block.style';
 
 const colors = {
   primary: {
-    background: 'black',
+    background: 'blue',
     color: 'white',
   },
   success: {
@@ -17,21 +17,17 @@ const colors = {
   },
 };
 
-const Button = ({ children, color, type }) => {
-  return (
-    <S.Button type={type} color={colors[color]}>
-      {children}
-    </S.Button>
-  );
+const Block = ({ color, children }) => {
+  return <S.Block color={colors[color]}>{children}</S.Block>;
 };
 
-Button.propTypes = {
+Block.propTypes = {
   color: PropTypes.oneOf(['primary', 'success', 'danger']),
-  type: PropTypes.oneOf(['submit', 'reset', 'button']),
   children: PropTypes.node.isRequired,
 };
 
-Button.defaultProps = {
-  type: 'primary',
+Block.defaultProps = {
+  color: 'primary',
 };
-export default Button;
+
+export default Block;

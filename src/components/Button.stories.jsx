@@ -6,4 +6,13 @@ export default {
   component: Button,
 };
 
-export const Primary = () => <Button>Submit</Button>;
+export const Primary = () => (
+  <Button color='primary' type='submit'>
+    Submit
+  </Button>
+);
+export const Success = () => (
+  <Button color='success' type='reset'>
+    Reset
+  </Button>
+);

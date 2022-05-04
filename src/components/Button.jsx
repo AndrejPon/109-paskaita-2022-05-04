@@ -2,9 +2,24 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import * as S from './Button.style';
 
+const colors = {
+  primary: {
+    background: 'black',
+    color: 'white',
+  },
+  success: {
+    background: 'green',
+    color: 'white',
+  },
+  danger: {
+    background: 'red',
+    color: 'white',
+  },
+};
+
 const Button = ({ children, color, type }) => {
   return (
-    <S.Button type={type} color={color}>
+    <S.Button type={type} color={colors[color]}>
       {children}
     </S.Button>
   );

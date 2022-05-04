@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 
 export const Block = styled.div`
+  display: inline-block;
   background: ${(props) => props.color.background};
-  border-radius: 10px;
+  border-radius: 5px;
   color: ${(props) => props.color.color};
-  max-width: 200px;
+  width: 200px;
   padding: 10px;
 `;

@@ -1,0 +1,19 @@
+body{
+    text-align: center;
+}
+.hero{
+margin: 0 auto;
+width: 960px;
+}
+
+.block{
+    width: 500px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.button{
+    width: 500px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
